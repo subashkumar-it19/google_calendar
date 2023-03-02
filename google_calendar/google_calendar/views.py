@@ -6,7 +6,7 @@ from rest_framework.views import APIView
 from rest_framework.response import Response
 
 # Set up the OAuth2 flow
-SCOPES = ['https://www.googleapis.com/oauth2/v1/certs']
+SCOPES = ['https://www.googleapis.com/auth/calendar']
 FLOW = Flow.from_client_secrets_file(
     'secrets/client_secret.json',
     scopes=SCOPES,
